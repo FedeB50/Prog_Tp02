@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Sugeridor de Recetas";
+}
+<div>
+    <form asp-controller="Home" asp-action="GenerarSugerencia" method="get">
+        <div>
+            Nombre: <input type="text" name="NombreCocinero" />
+        </div>
+        <div>
+            Fecha de nacimiento: <input type="date" name="FechaNacimiento" />
+        </div>
+        <div>
+            Tipo de comida:
+        </div>
+        <div>
+            <input type="radio" name="TipoComida" value="Caliente" />Caliente
+        </div>
+        <div>
+            <input type="radio" name="TipoComida" value="Fría" /> Fría
+        </div>
+        <div>
+            Presupuesto: $ <input type="number" min="1" name="Presupuesto" placeholder="ars"/>
+        </div>
+        <div>
+            Cantidad de personas: <input type="number" max="20" min="1" name="CantidadPersonas" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>
+
